@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>899c8943-204e-4b42-baef-1687646eb860</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Workboard.Application\Workboard.Application.csproj" />
+    <ProjectReference Include="..\Workboard.Domain\Workboard.Domain.csproj" />
+    <ProjectReference Include="..\Workboard.Infratsructure\Workboard.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
